@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venkata Narayana Batthi's portfolio showcasing projects, skills in Azure Data Factory, Synapse Analytics, Microsoft Fabric, and more.">
+    <title>Venkata Narayana Batthi - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f7fa 50%, #fce4ec 100%);
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: linear-gradient(90deg, #304ffe, #00bcd4 85%);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+            box-shadow: 0 4px 20px rgba(48,79,254,0.10);
+        }
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 8px rgba(48,79,254,0.12);
+        }
+        h2 {
+            color: #304ffe;
+            margin-top: 2.5rem;
+            border-bottom: 2.5px solid #00bcd4;
+            padding-bottom: 0.3rem;
+            font-weight: 650;
+            font-size: clamp(1.5rem, 2vw, 1.75rem);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto 3rem auto;
+            background: #fff;
+            border-radius: 17px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.09);
+            padding: 2.5rem 3rem;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.15);
+        }
+        ul {
+            list-style: none;
+            margin-left: 2rem;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 1.05rem;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: clamp(0.95rem, 2vw, 1.09rem);
+        }
+        ul li::before {
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #304ffe, #00bcd4);
+            position: absolute;
+            left: -1.4rem;
+            top: 0.55rem;
+        }
+        .projects a {
+            color: #0067b8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .projects a:hover {
+            color: #002e63;
+            text-decoration: underline;
+        }
+        .contact-info a {
+            color: #304ffe;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: #00bcd4;
+            text-decoration: underline;
+        }
+        .download-resume-btn {
+            display: inline-block;
+            margin-top: 1.7rem;
+            background: linear-gradient(90deg, #00bcd4 65%, #304ffe 100%);
+            color: #fff;
+            padding: 0.68rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: clamp(1rem, 2vw, 1.13rem);
+            font-weight: 700;
+            box-shadow: 0 2px 16px rgba(48, 79, 254, 0.09);
+            letter-spacing: 0.5px;
+            transition: background 0.26s, box-shadow 0.23s, transform 0.16s;
+        }
+        .download-resume-btn:hover {
+            background: linear-gradient(90deg, #304ffe 50%, #00bcd4 100%);
+            box-shadow: 0 8px 18px rgba(48, 79, 254, 0.17);
+            transform: translateY(-2px) scale(1.03);
+        }
+        .section {
+            margin-bottom: 2.75rem;
+        }
+        p {
+            font-size: clamp(1rem, 2vw, 1.17rem);
+            color: #555;
+            letter-spacing: 0.02em;
+        }
+        nav {
+            background: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid #eee;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #304ffe;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 1.1rem 0.5rem 2rem 0.5rem;
+                padding: 1.4rem 0.7rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venkata Narayana Batthi</h1>
+        <p style="font-size:1.1rem; font-weight:500;">Aspiring Data Engineer | Cloud Data Pipelines | Azure & Fabric | Programming Enthusiast</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a highly motivated and detail-oriented aspiring Data Engineer with hands-on experience in Microsoft Azure Data Factory, Synapse Analytics, and Microsoft Fabric. Passionate about building scalable ETL pipelines and working with Lakehouse architectures, I seek to apply my cloud and data transformation skills in solving real-world business problems.
+            </p>
+        </section>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech, Electronics and Communication Engineering</strong> – PSCMR College Of Engineering And Technology (GPA: 7.91), Vijayawada, India | 2021 — 2025</li>
+                <li><strong>Intermediate, MPC</strong> – Vasavi Junior College (GPA: 7.71), Narasaraopet, India | 2018 — 2020</li>
+                <li><strong>SSC</strong> – Z.P High School (GPA: 8.7), Kolukula, India | 2017 — 2018</li>
+            </ul>
+        </section>
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>SQL (Basic) — HackerRank (Apr 2025)</li>
+                <li>SQL (Intermediate) — HackerRank (Jul 2025)</li>
+                <li>CSS (Basic) — HackerRank (May 2025)</li>
+            </ul>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Cloud Technologies:</strong> Azure Data Factory, Azure Synapse Analytics, Microsoft Fabric</li>
+                <li><strong>Programming:</strong> Python, HTML5, CSS</li>
+                <li><strong>Database Management:</strong> SQL</li>
+                <li><strong>Languages:</strong> English, Telugu</li>
+            </ul>
+        </section>
+        <section id="projects" class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Retail Sales ETL Project:</strong><br>
+                    Built an end-to-end ETL pipeline using Microsoft Fabric.<br>
+                    Ingested, transformed, and cleansed sales data into Lakehouse tables leveraging dataflows and Synapse Notebooks.<br>
+                    <a href="https://github.com/Venkatanarayana-batthi/RetailSales_ETL_Fabric" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </li>
+                <li>
+                    <strong>UWB Microstrip Patch Antenna for Wireless Applications:</strong><br>
+                    Designed and simulated a UWB microstrip patch antenna resonating at 4GHz, suitable for wireless communication, radar, and biomedical applications.<br>
+                    Used HFSS for simulation and fabricated on FR4 substrate, ensuring FCC UWB compliance and optimizing for portable, wearable integration.<br>
+                    Analyzed key parameters: S-parameters, VSWR, gain, and radiation pattern.
+                </li>
+                <li>
+                    <strong>Academic Performance DB:</strong><br>
+                    Built a robust SQL-based database to manage academic grades, SGPA, and CGPA, integrating best practices in normalization and data integrity.
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="section contact-info">
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:venkatanarayanabatthi585@gmail.com">venkatanarayanabatthi585@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/venkata-narayana-batthi" target="_blank" rel="noopener noreferrer">venkata-narayana-batthi</a></li>
+            </ul>
+            <p>
+                <em>Available for entry-level Data Engineering opportunities. Let’s connect to discuss how I can bring value to your data-driven team!</em>
+            </p>
+            <a class="download-resume-btn" href="venkata_narayana_resume.pdf" download>Download Resume (PDF)</a>
+        </section>
+    </div>
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkata Narayana Batthi - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f7fa 50%, #fce4ec 100%);
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #304ffe, #00bcd4 85%);
+            color: #fff;
+            padding: 2.7rem 0 1.7rem 0;
+            text-align: center;
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+            box-shadow: 0 4px 20px rgba(48,79,254,0.10);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 8px rgba(48,79,254,0.12);
+        }
+        h2 {
+            color: #304ffe;
+            margin-top: 2.5rem;
+            border-bottom: 2.5px solid #00bcd4;
+            padding-bottom: 0.3rem;
+            font-weight: 650;
+            font-size: 1.75rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto 3rem auto;
+            background: #fff;
+            border-radius: 17px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.09);
+            padding: 2.5rem 3rem;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.15);
+        }
+        ul {
+            list-style: none;
+            margin-left: 2rem;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 1.05rem;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: 1.09rem;
+        }
+        ul li::before {
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #304ffe, #00bcd4);
+            position: absolute;
+            left: -1.4rem;
+            top: 0.55rem;
+        }
+        .projects a {
+            color: #0067b8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .projects a:hover {
+            color: #002e63;
+            text-decoration: underline;
+        }
+        .contact-info a {
+            color: #304ffe;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: #00bcd4;
+            text-decoration: underline;
+        }
+        .download-resume-btn {
+            display: inline-block;
+            margin-top: 1.7rem;
+            background: linear-gradient(90deg, #00bcd4 65%, #304ffe 100%);
+            color: #fff;
+            padding: 0.68rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.13rem;
+            font-weight: 700;
+            box-shadow: 0 2px 16px rgba(48, 79, 254, 0.09);
+            letter-spacing: 0.5px;
+            transition: background 0.26s, box-shadow 0.23s, transform 0.16s;
+        }
+        .download-resume-btn:hover {
+            background: linear-gradient(90deg, #304ffe 50%, #00bcd4 100%);
+            box-shadow: 0 8px 18px rgba(48, 79, 254, 0.17);
+            transform: translateY(-2px) scale(1.03);
+        }
+        .section {
+            margin-bottom: 2.75rem;
+        }
+        p {
+            font-size: 1.17rem;
+            color: #555;
+            letter-spacing: 0.02em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 1.1rem 0.5rem 2rem 0.5rem;
+                padding: 1.4rem 0.7rem;
+            }
+            h1 {
+                font-size: 2.09rem;
+            }
+            h2 {
+                font-size: 1.34rem;
+            }
+            ul li {
+                font-size: 0.97rem;
+            }
+            .download-resume-btn {
+                font-size: 1rem;
+                padding: 0.57rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venkata Narayana Batthi</h1>
+        <p style="font-size:1.15rem; font-weight:500;">Aspiring Data Engineer &nbsp;|&nbsp; Cloud Data Pipelines &nbsp;|&nbsp; Microsoft Azure &amp; Fabric &nbsp;|&nbsp; Programming Enthusiast</p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a highly motivated and detail-oriented aspiring Data Engineer with hands-on experience in Microsoft Azure Data Factory, Synapse Analytics, and Microsoft Fabric. Passionate about building scalable ETL pipelines and working with Lakehouse architectures, I seek to apply my cloud and data transformation skills in solving real-world business problems.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech, Electronics and Communication Engineering</strong> – PSCMR College Of Engineering And Technology (GPA: 7.91), Vijayawada, India | 2021 — 2025</li>
+                <li><strong>Intermediate, MPC</strong> – Vasavi Junior College (GPA: 7.71), Narasaraopet, India | 2018 — 2020</li>
+                <li><strong>SSC</strong> – Z.P High School (GPA: 8.7), Kolukula, India | 2017 — 2018</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>SQL (Basic) — HackerRank (Apr 2025)</li>
+                <li>SQL (Intermediate) — HackerRank (Jul 2025)</li>
+                <li>CSS (Basic) — HackerRank (May 2025)</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Cloud Technologies:</strong> Azure Data Factory, Azure Synapse Analytics, Microsoft Fabric</li>
+                <li><strong>Programming:</strong> Python, HTML5, CSS</li>
+                <li><strong>Database Management:</strong> SQL</li>
+                <li><strong>Languages:</strong> English, Telugu</li>
+            </ul>
+        </section>
+        <section class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Retail Sales ETL Project:</strong><br>
+                    Built an end-to-end ETL pipeline using Microsoft Fabric.<br>
+                    Ingested, transformed, and cleansed sales data into Lakehouse tables leveraging dataflows and Synapse Notebooks.<br>
+                    <a href="https://github.com/Venkatanarayana-batthi/RetailSales_ETL_Fabric" target="_blank">GitHub Repository</a>
+                </li>
+                <li>
+                    <strong>UWB Microstrip Patch Antenna for Wireless Applications:</strong><br>
+                    Designed and simulated a UWB microstrip patch antenna resonating at 4GHz, suitable for wireless communication, radar, and biomedical applications.<br>
+                    Used HFSS for simulation and fabricated on FR4 substrate, ensuring FCC UWB compliance and optimizing for portable, wearable integration.<br>
+                    Analyzed key parameters: S-parameters, VSWR, gain, and radiation pattern.
+                </li>
+                <li>
+                    <strong>Academic Performance DB:</strong><br>
+                    Built a robust SQL-based database to manage academic grades, SGPA, and CGPA, integrating best practices in normalization and data integrity.
+                </li>
+            </ul>
+        </section>
+        <section class="section contact-info">
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:venkatanarayanabatthi585@gmail.com">venkatanarayanabatthi585@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/venkata-narayana-batthi" target="_blank">venkata-narayana-batthi</a></li>
+            </ul>
+            <p>
+                <em>Available for entry-level Data Engineering opportunities. Let’s connect to discuss how I can bring value to your data-driven team!</em>
+            </p>
+            <a class="download-resume-btn" href="venkata_narayana_resume.pdf" download>Download Resume (PDF)</a>
+        </section>
+    </div>
+</body>
+</html>
